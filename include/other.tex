@@ -1,0 +1,37 @@
+\usepackage[bahasa]{babel}
+
+%\usepackage[letterpaper, margin=0.75in]{geometry}
+\usepackage[a4paper, right=0.7in,left=1in, top=0.75in, 
+                     bottom=0.75in, bindingoffset=0in,
+                     heightrounded]{geometry}
+
+\usepackage{parskip}
+\setlength{\parskip}{1em}
+
+\usepackage{array}
+
+\usepackage[bookmarksnumbered=true,     
+    bookmarksopen=true,         
+    bookmarksopenlevel=1,
+    pdfstartview=Fit,           
+    pdfpagemode=UseOutlines, 
+    pdfusetitle, hypertexnames=false, pdfstartpage=1, hidelinks]{hyperref}
+
+\usepackage[numbered]{bookmark}
+\usepackage{graphicx}
+
+\usepackage{setspace}
+\newcommand{\bahasa}[1]{
+\noindent
+\leftskip=0em
+\parindent=0em
+\hangindent=\parindent
+\normalsize
+#1}
+\newcommand{\english}[1]{
+\indent
+\parindent=-1em
+\hangindent=\parindent
+\leftskip=1em
+\footnotesize
+#1}

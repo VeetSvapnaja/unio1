@@ -1,0 +1,34 @@
+\usepackage[pagestyles,extramarks]{titlesec}
+\usepackage{titletoc}
+
+%% \titleformat{\chapter}[display]
+%% {\bfseries\Large}
+%% {\filleft\MakeUppercase{\chaptertitlename} \Huge\thechapter}
+%% {10ex}
+%% {\titlerule
+%%   \vspace{2ex}%
+%%   \filleft}
+%% [\vspace{2ex}
+%% \titlerule]
+
+\newcommand*{\fancychapterstyle}{
+\titleformat{\chapter}[block]{\filleft\bfseries\large}{\MakeUppercase{\chaptertitlename\hspace{.5pt}\thechapter}}{.5em}{}[\vspace{2ex}\titlerule \small Diterjemahkan dan diedit oleh team OSHO Indonesia. Fb/ig/twitter/pinterest: @oshoindonesia. Web: www.oshoindonesia.com \\ \vspace{5ex}\titlerule]
+}
+\settitlemarks*{chapter,section}
+
+
+\newpagestyle{mystyle}{
+  \setheadrule{.1pt}
+  \sethead
+  [\textbf{\chaptername\hspace{.5pt}\thechapter. \chaptertitle}]
+  [][]
+  {\textbf{\chaptername\hspace{.5pt}\thechapter. \chaptertitle}}{}{}
+  \renewcommand{\makefootrule}{\rule[0.9\baselineskip]{\linewidth}{0.1pt}}%
+%  \setfootrule{.1pt}
+  \setfoot[\textbf{}][\thepage][OSHO]{\textbf{KETIKA SEPATU PAS}}{\thepage}{OSHO}
+}
+
+\newpagestyle{style2}{
+  \renewcommand{\makefootrule}{\rule[0.9\baselineskip]{\linewidth}{0.1pt}}%
+  \setfoot[][\thepage][OSHO]{}{\thepage}{OSHO}
+}
